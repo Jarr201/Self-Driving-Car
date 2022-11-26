@@ -27,7 +27,7 @@ class Car {
         }
 
         if (this.speed > this.maxSpeed) {
-            this.speed = this.maxSpeed
+            this.speed = this.maxSpeed;
         }
         if (this.speed < -this.maxSpeed / 2) {
             this.speed = -this.maxSpeed / 2;
@@ -56,7 +56,7 @@ class Car {
         }
 
         this.x -= Math.sin(this.angle) * this.speed;
-        this.y -= Math.cos(this.andle) * this.speed;
+        this.y -= Math.cos(this.angle) * this.speed;
     }
 
     draw(ctx) {
